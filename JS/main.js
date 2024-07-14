@@ -302,7 +302,7 @@ async function getAreaMeals(area){
         $(".categories").addClass("d-none")
         $(".area").addClass("d-none")
 
-  let api = await fetch(`http://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
+  let api = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
   let response = await api.json()
 console.log(response);
 displayAreaMeals(response.meals.slice(0,20))
