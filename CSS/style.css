@@ -1,0 +1,222 @@
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar,
+nav{
+  width: fit-content;
+}
+
+nav{
+  z-index: 9999;
+  position: fixed;
+  left: -312px;
+  top: -10px;
+  bottom: 0;
+}
+
+.nav-header .logo img{
+  width: 60px;
+}
+
+.nav-tabs ul li{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.nav-tabs ul {
+  overflow: hidden;
+}
+
+.nav-header .hamburger i{
+  cursor: pointer;
+}
+
+.show-meals .show-meal-caption,
+.categories .show-meal-caption{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transform: translateY(120%);
+  -webkit-transform: translateY(120%);
+  -moz-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  -o-transform: translateY(120%);
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.show-meal-figure{
+  cursor: pointer;
+}
+
+figure:hover .show-meal-caption{
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.loading{
+  z-index: 99999999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+
+
+  .loading .loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 #FDCF11;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: #FDCF11;
+    box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #FDCF11;
+    }
+    50% {
+      box-shadow: 0 0 0 #FDCF11;
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #FDCF11;
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #fff;
+    }
+    50% {
+      box-shadow: 0 0 0 #fff;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #fff;
+      margin-top: 0;
+    }
+  }
+  
+  .details-row .inner-meal-detail .recipe li{
+    background-color: #CFF4FC;
+    color: #055160;
+  }
+
+  .details-row .inner-meal-detail .tags li{
+    background-color: #F8D7DA;
+    color: #842029;
+  }
+
+  .details-row .inner-meal-detail .source{
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+  .details-row .inner-meal-detail .source:hover{
+    background-color: #157347 !important;
+  }
+
+  .details-row .inner-meal-detail .youtube{
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+  .details-row .inner-meal-detail .youtube:hover {
+    background-color: #BB2D3B !important;
+  }
+
+  .categories .figure-caption{
+    transform: translateY(120%);
+    -webkit-transform: translateY(120%);
+    -moz-transform: translateY(120%);
+    -ms-transform: translateY(120%);
+    -o-transform: translateY(120%);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.categories .catrgory-figure{
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.categories .catrgory-figure:hover .figure-caption{
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.area-row .area-card{
+  cursor: pointer;
+}
+
+.ingrediants-row .ingrediants-card{
+  cursor: pointer;
+}
+
+.search-form input::placeholder{
+  color: #6c757d;
+}
+
+.search-form input,
+.search-form input:focus{
+  color: #fff;
+}
+
+.contact-form button{
+  border-color: #BB2D3B;
+}

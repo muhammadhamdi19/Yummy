@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./images/logo.png" />
+
+    <title>Yummy</title>
+  </head>
+  <body class="bg-black">
+    <div
+      class="loading d-none d-flex justify-content-center align-items-center bg-black bg-opacity-75"
+    >
+      <span class="loader"></span>
+    </div>
+
+    <nav>
+      <div class="navbar vh-100">
+        <div
+          class="nav-tabs vh-100 d-flex flex-column justify-content-between pb-1 pt-5 px-3 bg-black text-white"
+        >
+          <div class="tab-links">
+            <ul class="list-unstyled">
+              <li class="mb-3 search">Search</li>
+              <li class="mb-3 category">Categories</li>
+              <li class="mb-3 area-link">Area</li>
+              <li class="mb-3 ingrediants">Ingredients</li>
+              <li class="contact">Contact Us</li>
+            </ul>
+          </div>
+          <div class="tab-social">
+            <a href=""><i class="fa-brands fa-facebook text-white"></i></a>
+            <a href=""><i class="fa-brands fa-twitter text-white"></i></a>
+            <a href=""><i class="fa-solid fa-globe text-white"></i></a>
+            <div class="tab-footer">
+              <p>Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav-header d-flex flex-column align-items-center vh-100 justify-content-between py-3 bg-white"
+        >
+          <div class="logo">
+            <img src="./images/logo.png" alt="Yummy Logo" />
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+            <i class="fa-solid fa-xmark fa-3x d-none"></i>
+          </div>
+          <div class="links d-flex flex-column">
+            <a href=""><i class="fa-solid fa-globe text-black"></i></a>
+            <a href=""><i class="fa-solid fa-share-nodes text-black"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <form class="search-form d-none position-relative">
+      <div class="container w-75">
+        <div class="row search-row py-4" ></div>
+      </div>
+    </form>
+
+
+    <div class="show-meals mt-5">
+      <div class="container">
+        <div class="row show-meals-row gy-2"></div>
+      </div>
+    </div>
+
+    <div
+      class="meal-details d-none position-absolute top-0 end-0 start-0 bg-black mt-3 text-white py-5"
+    >
+      <div class="container">
+        <div class="row details-row pb-4"></div>
+      </div>
+    </div>
+
+    <div
+      class="categories d-none position-absolute top-0 end-0 start-0 bottom-0 py-5"
+    >
+      <div class="container">
+        <div class="row category-row"></div>
+      </div>
+    </div>
+
+    <div class="area d-none py-5">
+      <div class="container">
+        <div class="row area-row gy-3"></div>
+      </div>
+    </div>
+
+    <div class="ingrediants-sec d-none py-5">
+      <div class="container">
+        <div class="row ingrediants-row gy-3">
+          
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form ">
+      
+    </form>
+    
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/jquery-3.7.1.min.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
